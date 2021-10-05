@@ -1,0 +1,36 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 환경 지수 찾기</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'test.css' %}">
+</head>
+
+<body>
+    <section id="survey">
+        <div class="wrapper">
+            <form action="{% url 'test2' %}" method="POST" enctype=multipart/form-data>
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">1/8</h3>
+                        <h3 class="question">큰일이야 9시 실시간강의인데 9시 30분에 일어났다. 교수님께 지각체크라도 해달라 해야 하나..</h3>
+                        </div>
+                        <div class="answer">
+                            <div class="button">
+                                
+                                    {%csrf_token%}
+                                    
+                                        <button type="submit" class="option" name="answer" value=1>사람이 살면서 지각 할 수도 있지! 안 해줄지도 모르는데 다시잔다</button>
+                                        <button type="submit" class="option" name="answer" value=2>지금이라도 들어가서 지각처리 해달라한다</button>
+                                    
+                                
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+</body>

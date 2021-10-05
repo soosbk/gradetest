@@ -1,0 +1,37 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 환경 지수 찾기</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'test.css' %}">
+</head>
+
+<body>
+    <section id="survey">
+        <div class="wrapper">
+            <form action="{% url 'result' %}" method="POST" enctype=multipart/form-data>
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">8/8</h3>
+                        <h3 class="question">현재까지의 나의 학점에</h3>
+                    </div>
+                    <div class="answer">
+                        <div class="button">
+                            {%csrf_token%}
+                                <button type="submit" class="option" name="answer" value=3>만족한다</button>
+                                <button type="submit" class="option" name="answer" value=0>때려치자.. 머리는 왜 달고 사니
+                                    소용없다</button>
+
+                           
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</body>

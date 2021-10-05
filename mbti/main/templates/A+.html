@@ -1,0 +1,121 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+
+    <link rel="Stylesheet" href="{% static 'result.css' %}">
+    <script type="text/javascript">
+        const copyBtn = document.querySelector('.copy_btn');
+        const facebookShare = document.querySelector('.facebook_share')
+        const twitterShare = document.querySelector('.twitter_share');
+        function CopyUrl() {
+
+            var url = '';
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            url = window.document.location.href;
+            textarea.value = url;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("URL이 복사되었습니다.")
+        }
+
+        function sharefacebook() {
+            var sendUrl = '';
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            sendUrl = window.document.location.href;
+            window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+        }
+
+        function shareTwitter() {
+            var sendUrl = '';
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            sendUrl = window.document.location.href;
+            window.open(
+                'https://twitter.com/intent/tweet?url=' + sendUrl);
+
+        }
+
+
+        copyBtn.addEventListener('click', copyUrl);
+        facebookShare.addEventListener('click', sharefacebook);
+        twitterShare.addEventListener('click', shareTwitter);
+
+    </script>
+</head>
+
+<body>
+
+    <section id="main_contets">
+        <div class="warpper">
+            <div class="result">
+
+                <div class="h4">당신의 학점은 <b>A+</b> 입니다.</div>
+
+
+                <div class="result_explains">
+
+                    <div class="explains">
+                        <h2 class="title"><b>어서와 대학원은 처음이지^^</b></h2>
+
+                    </div>
+
+                    <div class="explains">
+                        <h2 class="title">
+                            <div class="star">★</div>같이 보면 좋을 자료<div class="star">★</div>
+                        </h2>
+                    </div>
+                    <h3>
+
+                        <li><a href="https://cst.kookmin.ac.kr/security/laboratory">아주 좋은 곳</a></li>
+                        <img src="{% static 'lab.png' %}" alt="lab">
+
+
+                    </h3>
+
+                </div>
+
+
+
+
+                <br><br>
+                <div class="share">
+                    <div class="url">
+                        <button onclick="CopyUrl()" class="copy_btn" type="button"> URL 복사하기</button>
+
+                    </div>
+
+                    <div class="facebook">
+
+                        <button onclick="sharefacebook()" class="facebook_share" type="button">Facebook 공유</button>
+                    </div>
+                    <div class="twitter">
+                        <button onclick="shareTwitter()" class="twitter_share" type="button">트위터 공유</button>
+                    </div>
+
+                </div>
+
+                <div class="name">
+                    kim & kims
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

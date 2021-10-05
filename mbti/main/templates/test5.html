@@ -1,0 +1,39 @@
+
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 환경 지수 찾기</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'test.css' %}">
+</head>
+
+<body>
+    <section id="survey">
+        <div class="wrapper">
+            <form action="{% url 'test6' %}" method="POST" enctype=multipart/form-data>
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">5/8</h3>
+                        <h3 class="question">내일 보는 시험공부는 끝난 상황! 며칠째 2시간만 잤더니 머리가 아프네 ㅠㅠ <br>아 맞다! 오늘 펜트하우스 마지막회 날인데?!!</h3>
+                        </div>
+                        <div class="answer">
+                            <div class="button">
+                                
+
+                            {%csrf_token%}
+                            
+                            <button type="submit" class="option" name="answer" value=1>펜트하우스는 못 참지 타이레놀 먹고라도 본다.</button>
+                            <button type="submit" class="option" name="answer" value=2>대x리 깨질 거 같으니 걍 잔다.</button>
+                            
+                                
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,242 @@
+
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+body {
+    background-color:aquamarine;
+    color: orange;
+    text-align: center;
+    
+} 
+button:hover { 
+    text-decoration: underline; 
+} 
+
+
+
+button {
+    font-family: 'SBAggroB';
+    font-size: 20px;
+    width: 400px; 
+    height: 50px; 
+    padding: 5px; 
+    border-style: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    background-color: #fff; 
+    color: #000; 
+}
+
+
+
+
+
+#main_contets {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:180%;
+    margin-top:100px;
+    
+}
+
+#main_contents .warpper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:180%;
+    max-width: 600px;
+    padding-bottom: 50px;
+    background-color: wheat;
+}
+
+
+.result {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+.result h1{
+    font-size: 40px;
+    font-family: 'SBAggroB';
+    color: black;
+}
+
+.result h2{
+    font-size: 30px;
+    font-family: 'SBAggroB';
+    color: #090301;
+    
+}
+.result h3{
+    font-size: 15px;
+    font-family: "IM_Hyemin-Bold";
+    color: black;
+}
+
+.h4 {
+    font-size: 25px;
+    font-family: "IM_Hyemin-Bold";
+    color: black;
+
+}
+
+
+.h5 {
+    font-size: 28px;
+    font-family: 'Poor Story', cursive;
+    color: black;
+}
+
+.result_explains {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    padding-bottom: 50px;
+    line-height:1.5;
+}
+
+
+.result_explains .explains {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+
+.result_explains .title {
+    text-align: center;
+    border-top:3px solid #Ea7e7c;
+    border-bottom: 3px solid #Ea7e7c;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+
+.star {
+    color:red;
+    font-size: 30px;
+}
+.result_explains u1 {
+    padding: 0 20px;
+    list-style-type: disc;
+}
+.result_explains h2 {
+    color:black;
+    font-size: 30px;
+    font-family: 'IM_Hyemin-Bold';
+}
+
+.result_explains h3 {
+    color:black;
+}
+
+.result_explains li {
+    padding-bottom: 15px;
+}
+
+
+.share{
+    font-size: 15px;
+    color:#000;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #Ea7e7c;
+}
+
+
+.share button {
+    margin-bottom:30px;
+    background-color: #ee2400;
+    color:#fff;
+}
+
+.facebook_share {
+    background-color: #3b5998;
+    color:#fff;
+}
+
+.twitter_share {
+    background-color: #00acee;
+    color:#fff;
+}
+
+
+.buttons {
+    padding-bottom: 50px;
+}
+
+
+.buttons h3{
+    padding-bottom: 20px;
+}
+
+.buttons button {
+    margin-bottom: 30px;
+}
+
+
+
+.color {
+    background-color: #7e47dd;
+    color: #fff;
+}
+
+
+
+.weniv {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+}
+
+
+.weniv a {
+    width: 100px;
+}
+
+
+.weniv img {
+    max-width: 2%;
+    height:0;
+    margin: 30px;
+}
+
+
+
+.name {
+    font-family: 'IM_Hyemin-Bold';
+    
+    color: #000;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration-line : none;
+    color:#000;
+}
