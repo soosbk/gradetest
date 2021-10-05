@@ -6,7 +6,7 @@ from main.models import UserModel
 # Create your views here.
 
 count_num = 0
-participation=0
+participation=76
 
 
 
@@ -107,6 +107,6 @@ def result(request):
         elif user.count_num==17:
             return render(request, 'A+.html')
         else:
-            return render(request,'B+.html')
+            return render(request,'A0.html')
     
 
