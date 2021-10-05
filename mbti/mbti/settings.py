@@ -26,7 +26,7 @@ SECRET_KEY = '#gl(8+u2^s_86yz6%&_n(ccsrdw&0rx4p5$jx*mc^wyyz66d&t'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [".ap-northeast-2.compute.amazonaws.com"]
 AUTH_USER_MODEL = "main.UserModel"
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
