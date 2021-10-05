@@ -12,17 +12,7 @@
     font-style: normal;
 }
 
-@media (max-width: 1023px) {
-  .question_container { font-size: 16px; }
-}
- 
-@media (max-width: 767px) {
-  .question_container { font-size: 14px; }
-}
- 
-@media (max-width: 639px) {
-  .question_container { font-size: 12px; }
-}
+
 
 @keyframes rotate {
     0% {
@@ -84,7 +74,17 @@ body {
 .question_container .question {
     font-family: "SBAggroB";
 }
-
+@media (max-width: 1023px) {
+  .question_container { font-size: 24px; }
+}
+ 
+@media (max-width: 767px) {
+  .question_container { font-size: 22px; }
+}
+ 
+@media (max-width: 639px) {
+  .question_container { font-size: 20px; }
+}
 .answer {
     font-size: 17px;
     line-height: 1.3;
