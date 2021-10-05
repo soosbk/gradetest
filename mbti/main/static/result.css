@@ -164,7 +164,10 @@ button {
     padding-bottom: 15px;
 }
 
-
+.result_explains img {
+    max-width: 100%;
+    height:auto;
+}
 .share{
     font-size: 15px;
     color:#000;
