@@ -54,7 +54,7 @@ button {
 #main_contets {
     display:flex;
     justify-content: center;
-    width:100%;
+    width:50%;
     height:180%;
     margin-top:100px;
     
@@ -64,7 +64,7 @@ button {
     display:flex;
     flex-direction: column;
     align-items: center;
-    width:100%;
+    width:50%;
     height:180%;
     max-width: 600px;
     padding-bottom: 50px;
