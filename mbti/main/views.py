@@ -104,7 +104,9 @@ def result(request):
             return render(request, 'B+.html')
         elif user.count_num <=16:
             return render(request, 'A0.html')
-        else:
+        elif user.count_num==17:
             return render(request, 'A+.html')
+        else:
+            return render(request,'B+.html')
     
 
