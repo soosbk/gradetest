@@ -12,10 +12,16 @@
     font-style: normal;
 }
 
-@media (max-width: 600px) {
-  .title {
-    font-size: 20px;
-  }
+@media (max-width: 1023px) {
+  .question_container { font-size: 16px; }
+}
+ 
+@media (max-width: 767px) {
+  .question_container { font-size: 14px; }
+}
+ 
+@media (max-width: 639px) {
+  .question_container { font-size: 12px; }
 }
 
 @keyframes rotate {
